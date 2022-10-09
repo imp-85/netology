@@ -1,0 +1,17 @@
+- hosts: all
+  become: yes
+  tasks:
+  - name: Install Tuned
+    apt:
+        name:
+        - tuned
+        state: latest
+        update_cache: yes
+  - name: Start as service
+    systemd:
+      name: tuned
+      state: started
+  - name: Enable autostart
+    systemd:
+      name: tuned
+      enabled: yes

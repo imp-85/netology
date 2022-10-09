@@ -1,0 +1,14 @@
+- hosts: all
+  become: yes
+  vars:
+    var1: "Shalom, pravoslavnye!!!"
+  tasks:
+  - name: Create file for motd
+    file:
+        path: /etc/motd
+        state: touch
+        mode: 0777
+  - name: Write var to file
+    lineinfile:
+      path: /etc/motd
+      line: "{{ var1 }}"

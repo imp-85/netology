@@ -1,0 +1,17 @@
+- hosts: all
+  become: yes
+  tasks:
+  - name: D-load
+    ansible.builtin.get_url:
+        url: https://downloads.apache.org/kafka/3.3.1/kafka-3.3.1-src.tgz
+        dest: /home/pantyukhin/Загрузки
+  - name: create dir for unzip
+    file:
+      path: /home/pantyukhin/Загрузки/unzipped
+      state: directory
+      mode: 0755
+  - name: Unzip
+    unarchive:
+      src: /home/pantyukhin/Загрузки/kafka-3.3.1-src.tgz
+      dest: /home/pantyukhin/Загрузки/unzipped
+      remote_src: yes
