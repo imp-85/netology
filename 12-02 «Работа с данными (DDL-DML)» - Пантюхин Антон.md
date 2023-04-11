@@ -45,7 +45,7 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 ![alt text for screen readers](/img/12-02-8.jpg "Text to show on mouseover")
 ![alt text for screen readers](/img/12-02-10.jpg "Text to show on mouseover")
 *Результатом работы должны быть скриншоты обозначенных заданий, а также простыня со всеми запросами.*
-Простыня по ссылке [https://downloads.mysql.com/docs/sakila-db.zip](https://github.com/imp-85/netology/blob/main/Docs/12-02%20full%20text.md)
+Простыня по ссылке [[https://downloads.mysql.com/docs/sakila-db.zip](https://github.com/imp-85/netology/blob/main/Docs/12-02%20full%20text.md)](https://github.com/imp-85/netology/blob/main/Docs/12-02%20full%20text.md)
 
 ### Задание 2
 Составьте таблицу, используя любой текстовый редактор или Excel, в которой должно быть два столбца: в первом должны быть названия таблиц восстановленной базы, во втором названия первичных ключей этих таблиц. Пример: (скриншот/текст)
