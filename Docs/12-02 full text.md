@@ -298,3 +298,4 @@ mysql> SHOW FULL TABLES;
 | store                      | BASE TABLE |
 +----------------------------+------------+
 23 rows in set (0,00 sec)
+ 
