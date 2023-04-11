@@ -52,7 +52,7 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 Название таблицы | Название первичного ключа
 customer         | customer_id
 ```
-![alt text for screen readers](/img/12-02-9.jpg "Text to show on mouseover")
+![alt text for screen readers](/img/12-02-9a.jpg "Text to show on mouseover")
 
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале. 
