@@ -1,3 +1,12 @@
+mysql> SELECT (SUM(index_length)/SUM(data_length))*100 AS 'ANSWER'
+    -> FROM information_schema.TABLES;
++---------+
+| ANSWER  |
++---------+
+| 40.0480 |
++---------+
+1 row in set (0,01 sec)
+
 mysql> EXPLAIN ANALYZE
     -> select distinct concat(c.last_name, ' ', c.first_name), sum(p.amount) over (partition by c.customer_id, f.title)
     -> from payment p, rental r, customer c, inventory i, film f
